@@ -1,4 +1,4 @@
-var imageList = ["SQL (1).png", "SQL (2).png", "Python (1).png", "Python (2).png", "Java (1).png", "BI.png", "Problem-Solving.png"];
+var imageList = ["SQL (1).png", "SQL (2).png", "Python (1).png", "Python (2).png", "Java (1).png", "BI.png", "Problem-Solving.png", "Project-Management.png", "APIs.png"];
 
 function generatorCertificates(i){
     const div = document.createElement("div");
@@ -24,13 +24,13 @@ function displayCertificates(filter) {
         }
     } else if (filter === "Database") {
         for (var i = 0; i < imageList.length; i++) {
-            if (imageList[i].includes("SQL") || imageList[i].includes("BI")) {
+            if (imageList[i].includes("SQL") || imageList[i].includes("BI") || imageList[i].includes("APIs")) {
                 generatorCertificates(i);
             }
         }
     } else if (filter === "Problem-Solving") {
         for (var i = 0; i < imageList.length; i++) {
-            if (imageList[i].includes("Problem-Solving")) {
+            if (imageList[i].includes("Problem-Solving") || imageList[i].includes("Project-Management")) {
                 generatorCertificates(i);
             }
         }
