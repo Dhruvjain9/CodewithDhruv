@@ -1,8 +1,4 @@
 @import url("styles.css");
-
-/* =========================
-   SECTION TITLE
-========================= */
 .section-title {
     font-size: 32px;
     color: #ffffff;
@@ -13,10 +9,6 @@
 .projects-section {
     margin: 20px;
 }
-
-/* =========================
-   PROJECT GRID
-========================= */
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -25,11 +17,9 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
+
 }
 
-/* =========================
-   PROJECT CARD (FLIP BASE)
-========================= */
 .project-card {
     position: relative;
     height: 340px;
@@ -38,9 +28,6 @@
     perspective: 1000px;
 }
 
-/* =========================
-   CARD FACES
-========================= */
 .project-card-front,
 .project-card-back {
     position: absolute;
@@ -53,12 +40,9 @@
 
     backface-visibility: hidden;
     transition: transform 0.6s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
 }
 
-/* =========================
-   FRONT FACE
-========================= */
 .project-card-front {
     align-items: center;
     justify-content: center;
@@ -66,9 +50,6 @@
     transform: rotateY(0deg);
 }
 
-/* =========================
-   BACK FACE
-========================= */
 .project-card-back {
     transform: rotateY(180deg);
 
@@ -105,13 +86,9 @@
 .project-card-front p {
     padding-top: 30px;
     text-align: justify;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 15px;
 }
-
-/* =========================
-   FLIP ON HOVER
-========================= */
 .project-card:hover .project-card-front {
     transform: rotateY(-180deg);
 }
@@ -120,9 +97,6 @@
     transform: rotateY(0deg);
 }
 
-/* =========================
-   BUTTON
-========================= */
 .project-card input[type="button"] {
     width: 50%;
     border-radius: 12px;
