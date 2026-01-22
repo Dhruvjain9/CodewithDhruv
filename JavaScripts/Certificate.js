@@ -28,7 +28,7 @@ function displayCertificates(filter) {
                 generatorCertificates(i);
             }
         }
-    } else if (filter === "Problem-Solving") {
+    } else if (filter === "Other") {
         for (var i = 0; i < imageList.length; i++) {
             if (imageList[i].includes("Problem-Solving") || imageList[i].includes("Project-Management")) {
                 generatorCertificates(i);
@@ -49,3 +49,4 @@ document.querySelectorAll(".filter-button").forEach(function(button) {
         displayCertificates(filter);
     });
 });
+
